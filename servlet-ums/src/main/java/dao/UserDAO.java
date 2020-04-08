@@ -3,11 +3,9 @@ package dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.management.RuntimeErrorException;
 
 import entity.User;
 import util.DBUtils;
@@ -36,7 +34,8 @@ public class UserDAO {
 				user.setUsername(username);
 				user.setPhone(rs.getString("phone"));
 				user.setPwd(rs.getString("pwd"));
-				
+				//输出user实体类信息
+				System.out.println("user=="+user);
 				
 				
 				
