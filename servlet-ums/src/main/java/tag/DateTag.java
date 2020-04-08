@@ -16,8 +16,6 @@ public class DateTag extends SimpleTagSupport{
 
 	private String pattern;
 	
-	private String asd;
-	
 	
 	public void setPattern(String pattern) {
 		this.pattern = pattern;
